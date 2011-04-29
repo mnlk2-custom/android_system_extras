@@ -26,7 +26,7 @@
 
 #include "su.h"
 
-/* Ewwww.  I'm way too lazy. */
+/* Ewwww. I'm way too lazy. */
 static const char socket_path_template[PATH_MAX] = REQUESTOR_CACHE_PATH "/.socketXXXXXX";
 static char socket_path_buf[PATH_MAX];
 static char *socket_path = NULL;
@@ -513,3 +513,5 @@ int main(int argc, char *argv[])
     deny();
     return -1;
 }
+
+
